@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blackgrandstyle - личный сайт</title>
+  <link rel="stylesheet" href="res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="18"><span class="blob blob--1"></span></div>
+    <div class="blob-layer" data-depth="34"><span class="blob blob--2"></span></div>
+    <div class="blob-layer" data-depth="50"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="index.html" class="active" data-ph="nav.home">Главная</a>
+        <a href="pages/contacts.html" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="pages/games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="pages/music.html" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="pages/mods.html" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="pages/stalker.html" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="pages/hamster.html" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero reveal">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Сайт-визитка blackgrandstyle</h1>
+          <p class="lead">Создан просто чтобы... Оставить что-то после себя в интернете.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <ul class="facts">
+        <li><span>Опыт</span> <span>Смотря в чём</span></li>
+        <li><span>Специализация</span> <span>Жить жизнь</span></li>
+        <li><span>Стек</span> <span>Иногда пиво, игры, музыка, вкусные сигареты</span></li>
+        <li><span>Сон</span> <span>От 0 до 18 часов в сутки</span></li>
+        <li><span>Статус</span> <span>Иногда жив, иногда не очень</span></li>
+      </ul>
+    </section>
+
+    <section class="container reveal">
+      <h2 class="section-title">Из жизни:</h2>
+      <div class="confession-list">
+        <div class="confession">Мне понравилась срочная служба</div>
+        <div class="confession">Часто теряю мотивацию, хотя ещё вчера горел делом</div>
+        <div class="confession">Могу делать что-то понравившееся мне пока не затру до дыр. Даже если другие считают это действие дерьмом</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="res/placeholders.js"></script>
+  <script src="res/script.js"></script>
+</body>
+</html>
