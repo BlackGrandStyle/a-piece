@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Любимые моды S.T.A.L.K.E.R. - blackgrandstyle</title>
+  <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="20"><span class="blob blob--1"></span></div>
+    <div class="blob-layer" data-depth="44"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="../index.html" data-ph="nav.home">Главная</a>
+        <a href="contacts.html" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown is-current">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="music.html" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="mods.html" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="stalker.html" class="is-active" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="hamster.html" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title reveal">Любимые моды S.T.A.L.K.E.R.</h1>
+    <p class="section-sub reveal">Лютое ИМХО под каждым модом. Я предупредил. Только то, что я проходил/играл</p>
+
+    <div class="media-grid">
+
+      <a class="media-card media-card--mod reveal" href="https://www.stalkergamma.com/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://anomalymod.com/wp-content/uploads/2022/05/gamma_logo.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=GAMMA';" alt="G.A.M.M.A." loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>G.A.M.M.A.</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-gamma" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="8"></div>
+          <div class="media-card__desc" id="desc-gamma" hidden>
+            <p>Самое лучшее преображение Зоны. Два минуса - сложность установки и сложность настройки под себя. После пройденных испытаний открывается огромный и крайне красивый мир. Причем, это не чувствуется "васянкой", это - чувствуется новой, уникальной игрой.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+
+      <a class="media-card media-card--mod reveal" href="https://www.moddb.com/mods/stalker-anomaly" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://media.moddb.com/images/downloads/1/278/277404/Download-153.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=Anomaly';" alt="Anomaly" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>Anomaly</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-anomaly" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="9"></div>
+          <div class="media-card__desc" id="desc-anomaly" hidden>
+            <p>То, от чего пошла G.A.M.M.A.. Люблю больше, но на сегодня достаточно устарела и требует доработок аддонами.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/6273-true-stalker/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://sun9-8.userapi.com/impg/ZeS-MsQHbpsrlF8n3F6_y3gsnthTgf0HOa6kXQ/O3zge_kMUxA.jpg?size=1821x1821&quality=96&sign=0f99e84354584e00c8507494aca44330&type=album"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=True+Stalker';" alt="True Stalker" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>True Stalker</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-true-stalker" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="7"></div>
+          <div class="media-card__desc" id="desc-true-stalker" hidden>
+            <p>Для меня - один из лучших сюжетных модов. Да, минусов много. От постоянной беготни до тупорылого первого ГГ. Но играется интересно и есть желание пройти до конца. Это скорее не про Сталкер, а про красивую историю.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/13375-zakon-shlyapki-postironichnyy-luter-shuter/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2025_10/1096843565_.thumb.jpg.acb7eecaa9648782f4255906f3388955.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=Zakon+Shlyapki';" alt="Закон Шляпки" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>Закон Шляпки</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-zakon-shlyapki" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="9"></div>
+          <div class="media-card__desc" id="desc-zakon-shlyapki" hidden>
+            <p>Это как True Stalker, только в другую сторону и упорото. Ну и играется веселее и лучше. Диалоги читаются все.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/1921-novyy-arsenal-7/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://sun9-70.userapi.com/slBZ_vjsD7r1Q9rGjzWNJ-tB-ySWahbsr_65uA/DknQlMmK2q0.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=Arsenal+7';" alt="Новый Арсенал 7" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>Новый Арсенал 7</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-arsenal" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="3"></div>
+          <div class="media-card__desc" id="desc-arsenal" hidden>
+            <p>Сейчас - лютая кривая дрисня. Но воспоминания из прошлого хорошие. Играется плохо и убого.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/9689-nlc-7-build-391/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2020_11/17203373_NLC7-.thumb.jpg.e2419db0c2427e497b618eaa37601491.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=NLC+7';" alt="NLC 7" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>NLC 7</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-nlc" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="1"></div>
+          <div class="media-card__desc" id="desc-nlc" hidden>
+            <p>Желаю разрабу этого инструмента для пыток ощущать себя также, как ощущает ГГ на протяжении всей игры. Это не для нормальных людей. Одна звезда только за красивый и выдержанный дизайн мода.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/11548-sfz-project-episode-zero-deluxe-remake/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2025_05/1WBePaHAl-0.thumb.jpg.5f77915c8a024cdcf4e2b29a70a8b4d0.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=SFZ';" alt="SFZ Project Episode Zero" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>SFZ Project</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-sfz" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="6"></div>
+          <div class="media-card__desc" id="desc-sfz" hidden>
+            <p>Хорошо, но мало. Выпускать ДЕЛЮКССУПЕРПУПЕР ремикс вместо полноценного мода - такое себе. Интересная история, красивая графика, отличные анимации...</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/179-gunslinger-mod/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2022_10/23.thumb.jpg.7c75817c01fdc366901d8bc433472951.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=GUNSLINGER';" alt="GUNSLINGER" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>GUNSLINGER</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-gunslinger" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="10"></div>
+          <div class="media-card__desc" id="desc-gunslinger" hidden>
+            <p>Конечно, это не полноценный мод с сюжетом, персонажами и подобным. Но эти анимации... Звуки... К тому же, его часто используют в других, крупных модах. Тот же True Stalker. Огромная, отличная работа. Делает то, что должен. И делает отлично.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/945-oblivion-lost-remake-25/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2020_09/2133622568_OblivionLostRemake2.5.thumb.jpg.340d477b0b4c94cfbe61dece0cdc57f2.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=OLR+2.5';" alt="OLR 2.5" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>OLR 2.5</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-olr" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="7"></div>
+          <div class="media-card__desc" id="desc-olr" hidden>
+            <p>Интересное переосмысленние Сталкера. Но слишком растянуто и перегружено. Автор затащил все идеи разработчиков, которые явно были описаны просто как шутка. Какие болезни от крыс?</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/stuff/zov_pripjati/x-ray-multiplayer-extension-obt-r253/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2024_11/XRMPE.thumb.png.76ce0c7b70d5e65f9eb5c45086bb7837.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=xrMPE';" alt="xrMPE" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>xrMPE</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-xrmpe" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="10"></div>
+          <div class="media-card__desc" id="desc-xrmpe" hidden>
+            <p>Новое дыхание в моддинг. Пробежать Зов Припяти с другом... Звучит как мечта из детства. Очень круто и работает хорошо. Не без минусов, но такому проекту они простительны.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/404-dead-air/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2020_10/TfZd4IVi114.thumb.jpg.6fb17ce3ee348f4712866e6fef65fee4.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=Dead+Air';" alt="Dead Air" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>Dead Air</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-dead-air" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="8"></div>
+          <div class="media-card__desc" id="desc-dead-air" hidden>
+            <p>Вот где суровость Зоны показана как надо. А не инвалидность ГГ из NLC. Очень атмосферный мод. Про красоту сказать сложно, но стиль имеет. А это - главное.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://ap-pro.ru/forums/topic/224-%D0%B7%D0%BE%D0%BD%D0%B0-%D0%BF%D0%BE%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://ap-pro.ru/uploads/monthly_2020_07/409627909_.thumb.jpg.0556b21c1f308beee30ec20de2f87484.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/0a0805/f39c12?text=Zona+Porazheniya';" alt="Зона Поражения" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <div class="media-card__title-row">
+            <h3>Зона Поражения</h3>
+            <button type="button" class="media-card__desc-btn" aria-expanded="false" aria-controls="desc-zona-porazheniya" title="Показать описание">📋</button>
+          </div>
+          <div class="media-card__rating" data-rating="9"></div>
+          <div class="media-card__desc" id="desc-zona-porazheniya" hidden>
+            <p>Та самая прелесть из далекого прошлого. Играется даже сегодня отлично. Да и история интересная. Всегда можно перепройти.</p>
+          </div>
+          <span class="media-card__link" data-ph="linkOpen.appro">Открыть источник</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="../res/placeholders.js"></script>
+  <script src="../res/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Любимые моды Minecraft - blackgrandstyle</title>
+  <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="20"><span class="blob blob--1"></span></div>
+    <div class="blob-layer" data-depth="44"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="../index.html" data-ph="nav.home">Главная</a>
+        <a href="contacts.html" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown is-current">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="music.html" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="mods.html" class="is-active" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="stalker.html" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="hamster.html" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title reveal">Любимые моды Minecraft</h1>
+    <p class="section-sub reveal">Пихаю всегда когда могу</p>
+
+    <div class="media-grid">
+      <a class="media-card media-card--mod reveal" href="https://www.curseforge.com/minecraft/mc-mods/ic2-classic" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://media.forgecdn.net/avatars/thumbnails/36/333/256/256/635937542471251096.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/1a1a1a/f39c12?text=IC2+Classic';" alt="IC2 Classic" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>IC2 Classic</h3>
+          <span class="media-card__link" data-ph="linkOpen.curseforge">Открыть на CurseForge</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://www.curseforge.com/minecraft/mc-mods/official-divinerpg" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://media.forgecdn.net/avatars/thumbnails/250/123/256/256/637177036333219050.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/1a1a1a/f39c12?text=Divine+RPG';" alt="Divine RPG" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Divine RPG</h3>
+          <span class="media-card__link" data-ph="linkOpen.curseforge">Открыть на CurseForge</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://www.curseforge.com/minecraft/mc-mods/quark" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://media.forgecdn.net/avatars/thumbnails/588/295/256/256/637958240318838626.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/1a1a1a/f39c12?text=Quark';" alt="Quark" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Quark</h3>
+          <span class="media-card__link" data-ph="linkOpen.curseforge">Открыть на CurseForge</span>
+        </div>
+      </a>
+	  
+      <a class="media-card media-card--mod reveal" href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs-1-21-1-port" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://media.forgecdn.net/avatars/thumbnails/1585/200/256/256/639025960348424862.png"
+               onerror="this.onerror=null;this.src='https://placehold.co/256x256/1a1a1a/f39c12?text=Alex%27s+Mobs';" alt="Alex's Mobs" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Alex's Mobs</h3>
+          <span class="media-card__link" data-ph="linkOpen.curseforge">Открыть на CurseForge</span>
+        </div>
+      </a>
+	  
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="../res/placeholders.js"></script>
+  <script src="../res/script.js"></script>
+</body>
+</html>

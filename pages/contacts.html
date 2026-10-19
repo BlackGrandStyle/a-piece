@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты - blackgrandstyle</title>
+  <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="20"><span class="blob blob--2"></span></div>
+    <div class="blob-layer" data-depth="40"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="../index.html" data-ph="nav.home">Главная</a>
+        <a href="contacts.html" class="active" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="music.html" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="mods.html" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="stalker.html" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="hamster.html" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title reveal">Контакты</h1>
+    <p class="section-sub reveal">Пообщаться, или заплатить...</p>
+	
+    <a class="meme-box meme-box--link reveal" href="https://nohello.net/ru" target="_blank" rel="noopener">
+      <p class="meme-text">Прежде чем писать - прочитайте это: <strong>nohello.net/ru</strong></p>
+    </a>
+
+    <div class="contacts-grid">
+      <div class="contact-card reveal">
+        <h3>Почта</h3>
+        <p><a href="mailto:protonruska@internet.ru">protonruska@internet.ru</a></p>
+      </div>
+      <div class="contact-card reveal">
+        <h3>Telegram</h3>
+        <p><a href="https://t.me/blackgrandstyle" target="_blank" rel="noopener">@blackgrandstyle</a></p>
+      </div>
+    </div>
+
+    <div class="forms-pair">
+      <form class="contact-form reveal" action="mailto:protonruska@internet.ru" method="post" enctype="text/plain">
+        <h3 class="form-title">Письмо на почту</h3>
+        <label>
+          <span>Ваше имя</span>
+          <input type="text" name="name" required placeholder="Как к вам обращаться?">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required placeholder="you@example.ua">
+        </label>
+        <label>
+          <span>Сообщение</span>
+          <textarea name="message" rows="3" required placeholder="Сказ о великом..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" title="Откроет почтовый клиент с готовым письмом">Отправить на почту</button>
+      </form>
+
+      <form class="contact-form reveal" id="telegramForm" data-telegram-username="blackgrandstyle">
+        <h3 class="form-title">Сообщение в Telegram</h3>
+        <label>
+          <span>Ваше имя</span>
+          <input type="text" name="tgName" required placeholder="Как к вам обращаться?">
+        </label>
+        <label>
+          <span>Email <span class="form-optional">(необязательно)</span></span>
+          <input type="email" name="tgEmail" placeholder="you@example.ua">
+        </label>
+        <label>
+          <span>Сообщение</span>
+          <textarea name="tgMessage" rows="3" required placeholder="Сказ о великом..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" title="Откроет Telegram с готовым сообщением">Отправить в Telegram</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="../res/placeholders.js"></script>
+  <script src="../res/script.js"></script>
+</body>
+</html>

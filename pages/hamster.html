@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хомячок - blackgrandstyle</title>
+  <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="20"><span class="blob blob--1"></span></div>
+    <div class="blob-layer" data-depth="42"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="../index.html" data-ph="nav.home">Главная</a>
+        <a href="contacts.html" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="music.html" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="mods.html" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="stalker.html" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="hamster.html" class="active" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="dino-section reveal">
+      <div class="dino-wrap">
+        <div class="dino-toolbar">
+          <input id="dinoNick" class="dino-nick" type="text" maxlength="16" placeholder="Ваш ник для таблицы лидеров" autocomplete="off" spellcheck="false">
+          <button id="dinoMute" class="dino-mute" type="button" title="Выключить звук">Звук</button>
+        </div>
+        <canvas id="dinoCanvas" class="dino-canvas" aria-label="Мини-игра: прыгающий хомяк"></canvas>
+        <div class="dino-actions">
+          <button id="dinoPause" class="dino-btn" type="button">Пауза</button>
+          <button id="dinoSprint" class="dino-btn" type="button">Спринт</button>
+          <button id="dinoFullscreen" class="dino-btn" type="button">На весь экран</button>
+        </div>
+        <div class="dino-menu" id="dinoMenu">
+          <div class="dino-menu__box">
+            <h3 class="dino-menu__title">Хомячок</h3>
+            <p class="dino-menu__record">Рекорд: <strong id="dinoMenuRecord">0</strong></p>
+            <div class="dino-difficulty" id="dinoDifficulty">
+              <button class="dino-diff-btn" data-difficulty="easy" type="button">Легко</button>
+              <button class="dino-diff-btn" data-difficulty="medium" type="button">Средне</button>
+              <button class="dino-diff-btn" data-difficulty="hard" type="button">Тяжко</button>
+            </div>
+            <button class="dino-play" id="dinoPlay" type="button">Побежали!</button>
+          </div>
+        </div>
+      </div>
+      <div class="dino-lb-wrap">
+        <h3 class="dino-lb-title">ТОП Хомячков</h3>
+        <div id="dinoLeaderboard" class="dino-lb"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="../res/data/nicknames.js"></script>
+  <script src="../res/data/leaderboard.js"></script>
+  <script src="../res/placeholders.js"></script>
+  <script src="../res/game.js"></script>
+  <script src="../res/script.js"></script>
+</body>
+</html>

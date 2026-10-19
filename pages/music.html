@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Любимая музыка - blackgrandstyle</title>
+  <link rel="stylesheet" href="../res/style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true"></div>
+  <canvas id="linesCanvas" class="lines-canvas" aria-hidden="true"></canvas>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob-layer" data-depth="20"><span class="blob blob--2"></span></div>
+    <div class="blob-layer" data-depth="42"><span class="blob blob--3"></span></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav">
+        <a href="../index.html" data-ph="nav.home">Главная</a>
+        <a href="contacts.html" data-ph="nav.contacts">Контакты</a>
+        <div class="dropdown nav-dropdown is-current">
+          <button class="nav-dropdown__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span data-ph="nav.library">Библиотека</span>
+            <span class="nav-dropdown__caret" aria-hidden="true">v</span>
+          </button>
+          <ul class="dropdown__menu">
+            <li><a href="games.html" data-ph="nav.games">Любимые игры</a></li>
+            <li><a href="music.html" class="is-active" data-ph="nav.music">Любимая музыка</a></li>
+            <li><a href="mods.html" data-ph="nav.mods">Любимые моды Minecraft</a></li>
+            <li><a href="stalker.html" data-ph="nav.stalker">Любимые моды S.T.A.L.K.E.R.</a></li>
+          </ul>
+        </div>
+        <a href="hamster.html" data-ph="nav.hamster">Хомячок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title reveal">Любимая музыка</h1>
+    <p class="section-sub reveal">Готовь слушать всегда. Про всех не вспомнить уже...</p>
+
+    <div class="media-grid">
+      <a class="media-card reveal" href="https://open.spotify.com/artist/5CJevTWHa5ybEDvkEjiiNQ" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/artworks-kfPxFvDq3C49-0-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Friday13';" alt="Friday13" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Friday13</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+
+      <a class="media-card reveal" href="https://open.spotify.com/artist/1F8usyx5PbYGWxf0bwdXwA" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-000623583771-j4xfua-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Pharaoh';" alt="Pharaoh" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Pharaoh</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+
+      <a class="media-card reveal" href="https://open.spotify.com/artist/0BLwluvlJt4aAE95gomnbe" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-EUczg4yRaBEoKS2e-yuwUXg-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=i61';" alt="i61" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>i61</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+
+      <a class="media-card reveal" href="https://open.spotify.com/artist/16ZNqMkDZrzd8fTXeN2kUH" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-000384989411-4as4s6-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Mnogoznaal';" alt="Mnogoznaal" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Mnogoznaal</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+	  
+      <a class="media-card reveal" href="https://open.spotify.com/artist/1pxLlPRiWRUBGdSOrVL4f0" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-EOEDvhXFVbUyj6z0-PGHllg-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Kai+Angel';" alt="Kai Angel" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Kai Angel</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+	  
+      <a class="media-card reveal" href="https://open.spotify.com/artist/45nklkjqBjIFoGUo24ObuC" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-qztGx2nTk2ipW797-KVNQjw-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Defect+Defect';" alt="Defect Defect" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Defect Defect</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+	  
+      <a class="media-card reveal" href="https://open.spotify.com/artist/3aEKHhv7eMJiFipomD81cN" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-000625231008-etsmpz-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=3eed';" alt="3eed" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>3eed</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+	  
+      <a class="media-card reveal" href="https://open.spotify.com/artist/4AM93R2m6QIKGPWH6QILF3" target="_blank" rel="noopener">
+        <div class="media-card__cover">
+          <img src="https://i1.sndcdn.com/avatars-yjvUjPC6lDlhupEW-mC6iqQ-t500x500.jpg"
+               onerror="this.onerror=null;this.src='https://placehold.co/500x500/1a1a1a/f39c12?text=Pepel+Nahudi';" alt="Pepel Nahudi" loading="lazy">
+        </div>
+        <div class="media-card__body">
+          <h3>Pepel Nahudi</h3>
+          <span class="media-card__link" data-ph="linkOpen.spotify">Открыть на Spotify</span>
+        </div>
+      </a>
+	  
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-ph="footerCopy">2025 blackgrandstyle</span>
+    </div>
+  </footer>
+
+  <script src="../res/placeholders.js"></script>
+  <script src="../res/script.js"></script>
+</body>
+</html>
